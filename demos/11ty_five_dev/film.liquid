@@ -1,0 +1,10 @@
+---
+pagination:
+    data: films
+    size: 1
+    alias: film
+permalink: films/{{ film.title | slug }}/index.html
+---
+
+
+{{ film.title }} was released in {{ film.release_date }}

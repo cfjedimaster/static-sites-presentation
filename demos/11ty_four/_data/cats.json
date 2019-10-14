@@ -1,0 +1,22 @@
+[
+	{
+		"name":"Luna",
+		"gender":"female",
+		"image":"http://placekitten.com/200/300"
+	},
+	{
+		"name":"Pig",
+		"gender":"female",
+		"image":"http://placekitten.com/300/200"
+	},
+	{
+		"name":"Cracker",
+		"gender":"male",
+		"image":"http://placekitten.com/400/400"
+	},
+	{
+		"name":"Sammy",
+		"gender":"male",
+		"image":"http://placekitten.com/500/500"
+	}
+]

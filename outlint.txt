@@ -1,0 +1,14 @@
+Intro
+What is Static?
+What is JAMStack
+
+Examples of SSGs
+Examples of Dynamic Stuff
+	Forms
+	Comments
+	Search
+
+Static Platforms
+	Netlify
+	Zeit
+	S3

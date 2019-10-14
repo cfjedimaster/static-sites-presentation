@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>{{ site.name }}</title>
+	<style>
+		img { 
+			max-width: 200px;
+			max-height: 170px;
+		}
+		div.cat {
+			float: left;
+			border: 1px solid;
+			width: 250px;
+			height: 250px;
+			margin-right: 25px;
+			padding: 5px;
+		}
+	</style>
+</head>
+<body>
+
+	<h2>Our Cats</h2>
+	
+	{% for cat in cats %}
+		<div class="cat">
+		<p>
+			<img src="{{cat.image}}">
+		</p>
+		<p>
+			Hi, my name is {{ cat.name}}. I'm a {{ cat.gender}} cat.
+		</p>
+		</div>
+	{% endfor %}
+
+	<br clear="left" />
+
+	<p>
+	<hr>
+	</p>
+
+	<p>
+		If you're interested in adopting, please email us at {{ site.email }}.
+	</p>
+
+</body>
+</html>

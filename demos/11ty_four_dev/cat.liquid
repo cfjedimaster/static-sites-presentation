@@ -1,0 +1,10 @@
+---
+pagination:
+    data: cats
+    size: 1
+    alias: cat
+permalink: cats/{{ cat.name | slug }}/index.html
+---
+
+
+{{ cat.name }} is {{ cat.gender }}
