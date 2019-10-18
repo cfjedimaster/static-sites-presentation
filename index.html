@@ -112,7 +112,7 @@
 						<li><a href="https://www.11ty.io/" target="_new">https://www.11ty.io</a></li>
 						<li>Open Source</li>
 						<li>Node based</li>
-						<li>Template Languages: Nunjucks, Liquid, Handlebars, Mustache, EJS, Haml, 
+						<li>Template Languages: Nunjucks, Liquid, Handlebars, Mustache, EJS, Haml 
 					</ul>
 				</section>
 
@@ -304,7 +304,7 @@ something: another value
 				<section>
 					<h2>Search</h2>
 					<ul>
-						<li class="fragment"><a href=https://cse.google.com/cse/" target="_new">Google Custom Search Engine</a></li>
+						<li class="fragment"><a href="https://cse.google.com/cse/" target="_new">Google Custom Search Engine</a></li>
 						<li class="fragment"><a href="https://lunrjs.com/" target="_new">Lunr</a></li>
 					</ul>
 				</section>
@@ -396,6 +396,7 @@ something: another value
 						<li><a href="https://jamstack.org/slack" target="_new">https://jamstack.org/slack</a></li>
 						<li><a href="https://jamstack.org/community/" target="_new">https://jamstack.org/community/</a></li>
 						<li><a href="https://github.com/BolajiAyodeji/awesome-jamstack" target="_new">https://github.com/BolajiAyodeji/awesome-jamstack</a></li>
+						<li><a href="https://jamstackthemes.dev/" target="_new">https://jamstackthemes.dev/</a></li>
 					</ul>
 				</section>
 
@@ -433,6 +434,16 @@ something: another value
 					{ src: 'plugin/highlight/highlight.js', async: true }
 				]
 			});
+
+			Reveal.addEventListener( 'slidechanged', function( event ) {
+				// event.previousSlide, event.currentSlide, event.indexh, event.indexv
+				var notes = event.currentSlide.querySelector(".notes");
+				console.clear();
+				if(notes) {
+					console.info(notes.innerHTML.replace(/\n\s+/g,'\n'));
+				}
+			});
+
 		</script>
 	</body>
 </html>
